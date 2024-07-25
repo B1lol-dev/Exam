@@ -1,0 +1,637 @@
+/* Fonts */
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Rubik-Regular.woff");
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url("../fonts/Philosopher-Regular.woff");
+}
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+    color: inherit;
+    font-weight: 400;
+    transition: .2s;
+
+    &:hover{
+        color: #DC780B;
+    }
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    color: #736D67;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin-inline: calc((100% - 1140px) / 2 );
+}
+
+.default-btn{
+    padding: 13px 40px;
+    background-color: #DC780B;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    transition: .25s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        border: 1px solid #DC780B;
+        color: #DC780B;
+    }
+    &:active{
+        transform: scale(97%);
+    }
+}
+
+.page-subtitle{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #DC780B;
+    text-transform: uppercase;
+}
+
+.page-title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    color: #150C01;
+}
+
+/* header start */
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 43px;
+    width: 100%;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+}
+
+.navbar button{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+/* header end */
+
+
+/* page1 start */
+
+.page1-main-wrapper{
+    display: flex;
+}
+
+.p1-text-wrapper{
+    max-width: 555px;
+    height: fit-content;
+    width: 100%;
+    margin-top: 144px;
+}
+
+.p1-text-wrapper h1{
+    font-family: Philosopher;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color: #150C01;
+}
+
+.p1-text-wrapper p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #736D67;
+    margin-top: 42px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.p1-btns{
+    display: flex;
+    gap: 30px;
+}
+
+.p1-main-img{
+    max-width: 555px;
+}
+
+.p1-main-img img{
+    width: 100%;
+}
+
+/* page1 end */
+
+/* page2 start */
+
+.page2{
+    margin-top: 115px;
+}
+
+.p2-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 105px;
+}
+
+.p2-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p2-card img{
+    width: 88px;
+}
+
+.p2-card h1{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.p2-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #736D67;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+/* page2 end */
+
+/* page3 start */
+
+.page3{
+    margin-top: 123px;
+    overflow-x: hidden;
+}
+
+.page3-main-img{
+    width: 555px;
+    height: 500px;
+    border-radius: 35px;
+    /* opacity: 0; */
+    opacity: 1;
+    transition: .2s;
+}
+
+.page3-main-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.p3-text-wrapper{
+    max-width: 555px;
+    height: fit-content;
+    width: 100%;
+    margin-left: 97px;
+    /* transform: scale(90%) translateX(700px); */
+    transform: scale(90%);
+    transition: .2s;
+}
+
+.p3-text-wrapper h1{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: left;
+    color: #150C01;
+}
+
+.p3-text-wrapper p:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .2em;
+    margin-left: .2em;
+    color: #DC780B;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.p3-text-wrapper p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #736D67;
+    margin-top: 42px;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.p3-text-wrapper button{
+    &::after{
+        content: ">";
+        margin-left: 10px;
+        transform: translateX(-20px);
+        position: absolute;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    &:hover::after{
+        /* margin-left: 0; */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* page3 end */
+
+
+/* page4 start */
+
+.page4{
+    margin-top: 115px;
+}
+
+.page4 .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page4-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #736D67;
+    max-width: 748px;
+    margin-top: 24px;
+}
+
+
+/* page4 cards */
+
+.p4-cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.p4-card{
+    width: 360px;
+    height: 446px;
+    border: 1px solid #0000001A;
+    border-radius: 76px 10px 0 0;
+}
+
+.p4-card img{
+    width: 360px;
+    height: 264px;
+    border-radius: 76px 10px 76px 0px;
+}
+
+.p4-card-text-wrapper{
+    display: flex;
+    margin: 21px 25px;
+}
+
+.p4-card-text-wrapper h1{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.p4-card-text-wrapper h1:first-child{
+    flex: 1;
+}
+
+.p4-card p{
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-inline: 25px;
+    color: #736D67;
+}
+
+.p4-btns-wrap{
+    margin: 21px 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.p4-btns-wrap button{
+    height: 34px;
+    width: 36px;
+    border-radius: 5px;
+    border: 1px solid #DC780B;
+    color: white;
+    background-color: #DC780B;
+    transition: .3s;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        color: #DC780B;
+        border: 1px solid #DC780B;
+        background-color: white;
+    }
+    &:active{
+        transform: scale(97%);
+    }
+}
+
+.p4-card-stars{
+    color: #736D67;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.p4-star-orange{
+    color: #DC780B;
+}
+
+.page4-bottom-button button{
+    font-weight: 500;
+    color: #DC780B;
+    background-color: white;
+    border: 1px solid #DC780B;
+    margin-top: 61px;
+    margin-bottom: 191px;
+
+    &::after{
+        content: ">";
+        margin-left: 10px;
+        transform: translateX(-20px);
+        position: absolute;
+        opacity: 0;
+        transition: .2s;
+    }
+
+    &:hover::after{
+        /* margin-left: 0; */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* page4 end */
+
+
+/* page5 start */
+.page5{
+    background-color: #FBF1E7;
+}
+
+.page5 .container{
+    padding-bottom: 45px;
+    padding-top: 56px;
+}
+
+.page5-phone{
+    /* opacity: 0; */
+    opacity: 1;
+    transition: .2s;
+    width: 206.99px;
+    height: 417px;
+    border-radius: 59px;
+    margin-left: 128px;
+}
+
+.get-from-store{
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+
+    &:hover{
+        transform: scale(103%);
+    }
+    &:active{
+        transform: scale(97%);
+    }
+}
+
+/* page5 end */
+
+
+/* page6 start */
+
+.page6-content-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 221px 0 120px 0; 
+}
+
+.p6-testimonal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p6-testimonal img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 73px 0 41px 0;
+}
+
+.p6-card-stars{
+    color: #736D67;
+    margin: 20px 0 32px 0;
+}
+
+.p6-user-text{
+    line-height: 24px;
+    text-align: center;
+    max-width: 506px;
+}
+
+.p6-user-name{
+    line-height: 18.75px;
+    text-align: center;
+}
+
+.p6-user-job{
+    font-size: 12px;
+    line-height: 14.06px;
+    color: #736D67;
+    margin-top: 6px;
+}
+
+/* page6 end */
+
+
+/* page7 start */
+
+.page7{
+    background-color: #FBF1E7;
+}
+
+.page7-content-wrapper{
+    padding: 115px 0 117px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page7-content-wrapper .page-title{
+    max-width: 749px;
+    margin: 15px 0 46px 0;
+}
+
+.p7-inputs-wrapper{
+    position: relative;
+}
+
+.p7-inputs-wrapper input:first-child{
+    width: 750px;
+    height: 75px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 32px;
+    font-size: 20px;
+
+
+    &::placeholder{
+        left: 32px;
+        position: absolute;
+        color: #736D67;
+        line-height: 40.6px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &:focus{
+        outline: 1px solid #DC780B;
+    }
+}
+
+.p7-inputs-wrapper input:last-child{
+    width: 156px;
+    height: 75px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #DC780B;
+    background-color: #DC780B;
+    transition: .2s;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+
+    &:hover{
+        color: #DC780B;
+        background-color: white;
+        border: 1px solid #DC780B;
+    }
+    &:active{
+        transform: scale(97%);
+    }
+}
+
+/* page7 end */
+
+
+
+/* footer start */
+
+footer{
+    background-color: #252525;
+}
+
+footer .container{
+    padding: 137px 0 104px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .container ul{
+    display: block;
+    padding-inline: 30px;
+}
+
+footer .container ul p{
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.16px;
+    text-align: left;
+    margin-bottom: 26px;
+    color: white;
+}
+
+footer .container ul li{
+    margin-block: 10px;
+    color: #ababab;
+
+    &:hover{
+        color: #DC780B;
+    }
+}
+
+.footer-socials{
+    margin-top: 25px;
+}
+
+.footer-socials img{
+    padding-inline: 5px;
+    transition: .2s;
+
+    &:hover{
+        transform: scale(110%);
+    }
+}
+
+.footer-socials img:nth-child(1){
+    padding-left: 0;
+}
+
+/* footer end */
