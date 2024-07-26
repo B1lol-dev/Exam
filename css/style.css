@@ -9,7 +9,7 @@
     src: url("../fonts/Philosopher-Regular.woff");
 }
 
-/* Global */
+/* Global start */
 *{
     margin: 0;
     padding: 0;
@@ -83,6 +83,8 @@ ul{
     text-align: center;
     color: #150C01;
 }
+
+/* Global end */
 
 /* header start */
 
